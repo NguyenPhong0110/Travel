@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.05s linear;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+section {
+    padding: 4rem 1% 4rem 1%;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: #29d9d5;
+    border: 0.2rem solid #29d9d5;
+    border-radius: 5rem;
+    cursor: pointer;
+    background: none;
+}
+
+.btn:hover {
+    background: #29d9d5;
+    color: #111;
+}
+
+.header-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(anhnen.jpg) repeat-x;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+}
+
+.header-top .navbar a {
+    font-size: 1.7rem;
+    color: #aaa;
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.header-top .navbar a:hover {
+    color: #29d9d5;
+}
+
+.header-top .btn {
+    margin-top: 0;
+}
+
+.header-top li {
+    display: inline-block;
+}
+
+.header-top li a,
+.dropbtn {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.header-top li.dropdown {
+    display: inline-block !important;
+}
+
+.header-top .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #095f5d;
+    min-width: 10px;
+    box-shadow: 0px 6px 12px 0px rgb(138, 207, 232);
+    z-index: 1;
+}
+
+.header-top li:hover .dropdown-content {
+    display: block;
+}
+
+.header-top.dropdown-content a {
+    color: rgb(9, 105, 140);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.header-top .dropdown-content a:hover {
+    background-color: rgb(56, 176, 174);
+}
+
+.header-top .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.logo i {
+    color: #29d9d5;
+    padding-right: .5rem;
+}
+
+#menu-btn {
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.book {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin-top: 7rem;
+    background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(09.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 8rem 5rem;
+    background-attachment: fixed;
+    text-align: left;
+}
+
+.book .video-container {
+    flex: 1 4 30rem;
+}
+
+.book .video-container video {
+    border-radius: 1rem;
+    width: 100%;
+    border: 1rem solid #fff;
+}
+
+.book .content {
+    flex: 1 1 42rem;
+    margin-bottom: 5rem;
+}
+
+.book .content span {
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.book .content h3 {
+    color: #ffffff;
+    font-size: 4rem;
+    margin-top: .5rem;
+}
+
+.book .content p {
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: #feffff;
+    line-height: 2;
+}
+
+.about {
+    background: linear-gradient(to left, rgba(14, 111, 164, 0), rgb(22, 132, 138));
+    overflow-x: hidden;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.about .image {
+    flex: 1 1 42rem;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+}
+
+.about .image img {
+    width: 100%;
+    box-shadow: 2rem 2rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.about .container {
+    flex: 1 1 42rem;
+}
+
+.about .container:not(:last-child) {
+    margin-bottom: 150px;
+    padding: 18rem 3%;
+}
+
+.about .container .more-content {
+    display: none;
+}
+
+.about .container span {
+    font-size: 2rem;
+    color: #10221b;
+    padding: 1rem 0;
+}
+
+.about .container button {
+    margin-top: 15px;
+    display: block;
+    background-color: #e41d3f;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.banner {
+    background: linear-gradient(to left, rgba(14, 111, 164, 0), rgb(22, 132, 138));
+    overflow-x: hidden;
+    background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(09.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 2rem;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.banner .content span {
+    font-size: 2rem;
+    color: #29d9d5;
+}
+
+.banner .content h3 {
+    font-size: 4rem;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.banner .content p {
+    max-width: 60rem;
+    margin: 1rem auto;
+    font-size: 1.4rem;
+    color: #aaa;
+    line-height: 2;
+}
+
+.footer .box-container {
+    background: linear-gradient(to left, rgba(14, 111, 164, 0), rgb(22, 132, 138));
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box {
+    padding: 2rem 6rem;
+}
+
+.footer .box-container .box .logo {
+    padding-bottom: 1rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.2rem;
+    color: black;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box p {
+    font-size: 1.4rem;
+    color: black;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.footer .box-container .box p i {
+    padding-right: .5rem;
+    color: #29d9d5;
+}
+
+.footer .box-container .box .share {
+    padding-top: 1rem;
+}
+
+.footer .box-container .box .share a {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    font-size: 1.7rem;
+    border: 0.2rem solid #29d9d5;
+    color: #29d9d5;
+    margin-right: .5rem;
+    text-align: center;
+}
+
+.footer .box-container .box .share a:hover {
+    background: black;
+    color: #29d9d5;
+}
+
+.footer .box-container .box .links {
+    font-size: 1.4rem;
+    color: black;
+    padding: 1rem 0;
+    display: block;
+}
+
+.footer .box-container .box .links:hover {
+    color: #29d9d5;
+}
+
+.footer .box-container .box .links:hover i {
+    padding-right: .5rem;
+}
+
+.footer .box-container .box .links i {
+    padding-right: .5rem;
+    color: black;
+}
